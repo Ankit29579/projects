@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Calculator </title>
+</head>
+<body>
+	<style type="text/css">
+		
+		*{
+			margin: 0;
+			padding: 0;
+			outline: none;
+			box-sizing: border-box;
+		}
+
+		body{
+			display: flex;
+			text-align: center;
+			justify-content: center;
+			min-height: 100vh;
+			background: linear-gradient(#9cebfc,#6ae1fb);
+		}
+
+		.center{
+			position: relative;
+			top: 0px;
+			width: 350px;
+			height: 470px;
+			background: black;
+			border-radius: 20px;
+		}
+		input[type="text"]{
+			height: 60px;
+			width: 300px;
+			margin-top: 40px;
+			border-radius: 1px;
+			color: black;
+			font-size: 22px;
+			font-weight: bold;
+			text-align: right;
+			padding-right: 10px;
+		}
+
+		form.buttons{
+			width: 300px;
+			margin: 10px ;
+			padding: 10px;
+		}
+		input[type="button"]{
+			width: 58px;
+			height: 55px;
+			margin: 5px;
+			font-size: 22px;
+			/*line-height: 55px;*/
+			border-radius: 3px;
+			border: 1px solid grey;
+		}
+		input[type="button"]:hover{
+			transition: .5s;
+			background: linear-gradient(#bfbfbf, #d9d9d9);
+		}
+
+		input#clearScreen{
+			background: red;
+			color: white;
+			
+		}
+
+		input#equal{
+			width: 275px;
+			background: red;
+			color: white;
+			font-size: 50px;
+		}
+
+	</style>
+
+	<div class="center">
+		
+		<form name="forms">
+			
+<input id = "screen" type ="text" name="answer" placeholder="calculator">
+	<div class="buttons">
+				
+				  
+<input type="button" value="7" onclick = "document.forms.answer.value += '7'" >
+<input type="button" value="8" onclick = "document.forms.answer.value += '8'" >
+<input type="button" value="9" onclick = "document.forms.answer.value += '9'" >
+<input type="button" value="/" onclick = "document.forms.answer.value += '/'" > <br>
+<input type="button" value="4" onclick = "document.forms.answer.value += '4'" >
+<input type="button" value="5" onclick = "document.forms.answer.value += '5'" >
+<input type="button" value="6" onclick = "document.forms.answer.value += '6'" >
+<input type="button" value="*" onclick = "document.forms.answer.value += '*'" > <br>
+<input type="button" value="1" onclick = "document.forms.answer.value += '1'" >
+<input type="button" value="2" onclick = "document.forms.answer.value += '2'" >
+<input type="button" value="3" onclick = "document.forms.answer.value += '3'" >
+<input type="button" value="-" onclick = "document.forms.answer.value += '-'" > <br>
+<input type="button" value="." onclick = "document.forms.answer.value += '.'" >
+<input type="button" value="0" onclick = "document.forms.answer.value += '0'" >
+<input type="button" value="+" onclick = "document.forms.answer.value += '+'" >
+
+<input type="button" id="clearScreen" value="C" onclick = "document.forms.answer.value =''" ><br>
+<input type="button" id="equal" value="=" onclick ="document.forms.answer.value=eval(forms.answer.value)">
+			</div>
+			
+		</form>
+	</div>
+
+<script type="text/javascript">
+	
+	
+// let const operator = document.getElementByValue('+, -, * or /');
+// let num1 = document.getElementById('num1').value;
+// let num2 = document.getElementById('num2').value;
+// let result= document.getElementById('screen');
+
+// function equal(){
+// 	if (operator == '+') { 
+//     result = num1 + num2;  
+// }  
+// 	else if (operator == '-') {  
+//     result = num1 - num2;  
+// }  
+// 	else if (operator == '*') { 
+//     result = num1 * num2;  
+// }  
+// 	else {  
+//     result = num1 / num2;  
+// }  
+// }
+
+
+
+// function clearScreen() {
+//  result.value = " ";
+// }
+
+
+
+
+</script>
+
+
+</body>
+</html>
